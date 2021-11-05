@@ -10,9 +10,9 @@ export default function Home() {
       <header>
         <h1 id="title">To-do List</h1>
       </header>
-      <main>
-        Lista
-      </main>
+      <section>
+        <List />
+      </section>
     </div>
   )
 }

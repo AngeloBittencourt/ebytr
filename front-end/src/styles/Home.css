@@ -1,6 +1,50 @@
+body {
+  background-color: lightgray;
+}
+
 main {
-  background-image: url(https://m.media-amazon.com/images/I/41uUx25kfxL._AC_.jpg);
+  background-image: url(a4.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
+  margin-top: 20px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 3px;
+}
+
+input {
+  width: 20%;
+  padding: 8px 16px;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: 6px;
+  border: 1px solid;
+  margin-right: 5px;
+}
+
+.addbtn {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:14px;
+	padding:12px 25px;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.addbtn:hover {
+	background-color:#5cbf2a;
+}
+.addbtn:active {
+	position:relative;
+	top:1px;
 }
