@@ -41,13 +41,17 @@ export default function List() {
     
   return (
     <div>
-      <p id="begining">Lista de tarefas</p>
-      <ul> 
-        {todos.map((todo) => <ListCard key={todo.id}
-        todos={todos} setTodos={setTodos} job={todo.job} status={todo.status} id={todo.id}/>)}
-      </ul>
-      <input placeholder="Adicione nova tarefa" type="text" id="new-todo"/>
-      <button type="submit" onClick={onClicks}> Adicionar </button>
+      <section>
+        <input placeholder="Adicione nova tarefa" type="text" id="new-todo" autocomplete="off"/>
+        <button class="addbtn" type="submit" onClick={onClicks} > Adicionar </button>
+      </section>
+      <main>
+        <p id="begining">Lista de tarefas</p>
+        <ul> 
+          {todos.map((todo) => <ListCard key={todo.id}
+          todos={todos} setTodos={setTodos} job={todo.job} status={todo.status} id={todo.id}/>)}
+        </ul>
+      </main>
     </div>
   )
 }

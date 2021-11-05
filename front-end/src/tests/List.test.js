@@ -60,12 +60,12 @@ describe('Testando funcionalidades da lista', () => {
 
   });
   it('Editando um item', () => {
-    const firstItem = screen.getByText('lavar a louça');
+    const firstItem = screen.getByText('Fazer o almoço');
     expect(firstItem).toBeInTheDocument()
 
     userEvent.dblClick(firstItem)
 
-    const itemEditor = screen.getByDisplayValue('lavar a louça')
+    const itemEditor = screen.getByDisplayValue('Fazer o almoço')
     userEvent.clear(itemEditor)
     userEvent.type(itemEditor, 'teste2')
 
